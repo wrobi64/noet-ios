@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C93519722D36F99A0096987E /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = C93519712D36F99A0096987E /* Down */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C93519542D36F90F0096987E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93519722D36F99A0096987E /* Down in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = noet;
 			packageProductDependencies = (
+				C93519712D36F99A0096987E /* Down */,
 			);
 			productName = noet;
 			productReference = C93519432D36F90D0096987E /* noet.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = C935193A2D36F90D0096987E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C93519702D36F99A0096987E /* XCRemoteSwiftPackageReference "Down" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C93519442D36F90D0096987E /* Products */;
 			projectDirPath = "";
@@ -552,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C93519702D36F99A0096987E /* XCRemoteSwiftPackageReference "Down" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnxnguyen/Down";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C93519712D36F99A0096987E /* Down */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C93519702D36F99A0096987E /* XCRemoteSwiftPackageReference "Down" */;
+			productName = Down;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C935193B2D36F90D0096987E /* Project object */;
 }

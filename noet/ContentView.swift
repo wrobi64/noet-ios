@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+struct ContentView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UINavigationController {
+        let notesListVC = NotesListViewController()
+        return UINavigationController(rootViewController: notesListVC)
+    }
+    
+    func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {
+        // Updates happen automatically
     }
 }
 
